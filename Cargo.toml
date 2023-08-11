@@ -1,5 +1,5 @@
 [package]
-name = "wasmcloud-provider-guest-macros"
+name = "wit-bindgen-wasmcloud-provider-guest"
 version = "0.1.0"
 description = """
 Macro for bindgen of WASM wasmcloud providers.
