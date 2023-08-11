@@ -1,0 +1,33 @@
+[package]
+name = "wasmcloud-provider-guest-macros"
+version = "0.1.0"
+description = """
+Macro for bindgen of WASM wasmcloud providers.
+"""
+publish = false
+
+authors.workspace = true
+categories.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[lib]
+proc-macro = true
+
+[features]
+default = []
+debug = []
+
+[dependencies]
+proc-macro2 = "1.0.66"
+quote = { workspace = true }
+serde = { workspace = true }
+syn = { workspace = true, features = [ "parsing", "full", "visit-mut" ] }
+anyhow = { workspace = true }
+wit-bindgen-rust-macro = "0.9.0"
+wit-bindgen-core = "0.9.0"
+wit-bindgen-rust = "0.9.0"
+wit-bindgen-rust-lib = "0.9.0"
+wasm-metadata = "0.9.0"
+heck = "0.4.1"
